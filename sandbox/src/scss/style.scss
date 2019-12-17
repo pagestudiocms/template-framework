@@ -1,0 +1,86 @@
+/**
+ * Main website styles
+ *
+ * This file contains all the elements needed to change the 
+ * appearance of the default bootstrap theme. 
+ *
+ * @project   <http://pagestudiocms.com> 
+ * @version   0.1.1
+ * @package   xhtml-css
+ * @author    Cosmo Mathieu <http://cosmointeractive.co> 
+ * @copyright 2015 <http://cosmointeractive.co>
+ * @file      style.css
+ * @css-for   IE 9+, Safari 4+, Firefox 3+
+ * 
+ * --------------------------------------------------------------
+ * Table of Contents
+ * --------------------------------------------------------------
+ * 1.0 - Reset
+ * 
+ * 
+ * --------------------------------------------------------------
+ * Color Glossary - needs updating
+ * --------------------------------------------------------------
+ * Dark gray (text):            #333333
+ * transition: all 0.5s ease-in-out 0s;
+ */ 
+
+// --------------------------------------------------------------
+// Sass file Imports
+// --------------------------------------------------------------
+
+@import "helpers/variables";   // Theme specific variables 
+@import "helpers/bootstrap";   // Bootstrap variable overrides
+@import "helpers/helpers";      // Keyframes etc.
+@import "helpers/mixins";      // Theme specific mixins 
+@import "vendors/bootstrap/_bootstrap";   // Bootstrap variables 
+@import "vendors/my-sass-mixins/mixins";  // Framework specific mixins 
+@import "vendors/matthieua-sass-css3-mixins/_css3-mixins.scss"; // Mixins 
+
+// Sets up our typography and reset 
+@import "base/base";
+
+// Page components that makes up a module, e.g. dropdown, lists
+@import "components/base";
+
+// Page sections - header, sidebar, footer. May use components defined under components
+@import "layout/base";
+
+// Individual pages
+@import "pages/kitchen-sink";
+
+// ---------------------------------------------------------------
+// Utility classes
+// ---------------------------------------------------------------
+
+// Rotate counter-clockwise 90 degrees
+.rotate {
+  @include transform(rotate(-90deg));
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);  // Internet Explorer
+}
+
+.bg-white {
+  background: #ffffff;
+  background-color: #ffffff;
+}
+.bg-grey {
+  background: #FCFCFC;
+  background-color: #FCFCFC;
+}
+
+.body-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(#CCC, .5);
+  zoom: 1;
+}
+
+// Mainly used in debugging and troubleshooting 
+//= e.g. <div class="border"></div>
+.border {
+  border: 1px solid #F00 !important;
+}

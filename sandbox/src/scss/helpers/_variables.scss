@@ -1,0 +1,66 @@
+// --------------------------------------------------------------
+// Color Glossary - needs updating
+// --------------------------------------------------------------
+// Dark gray (text):            #333333
+
+// --------------------------------------------------------------
+// Custom variables 
+// --------------------------------------------------------------
+// $white: #FFF;
+// $black: #1A1A1A;
+// $brand-black: #000;
+// $black-medium: #282826;
+// $charcoal: #282826; 
+// $charcoal-medium: #2A2A2A;
+// // $gray: #C2C2C2;
+// $gray-medium: #EBEBEB; 
+// $gray-dimmed: #FAFAFA;
+// // $gray-light: #FDFDFD;
+
+$brand-primary:         #267df4;
+$brand-primary-dark:    darken($brand-primary, 6%) !default;
+// $brand-primary-medium: #293134 !default;
+// $brand-secondary: #267DF4 !default;
+$brand-success:         #669900 !default; // #00AE69 #5C8600 #5cb85c
+$brand-success-dark:    darken($brand-success, 3%) !default;
+$brand-info:            #558ABB !default; // #4688DE
+$brand-info-dark:       darken($brand-info, 5%) !default;
+$brand-warning:         #FCF8DF !default; // #f0ad4e !default;
+$brand-warning-dark:    darken($brand-warning, 10%) !default;
+$brand-danger:          #B0423F !default; // #d9534f #
+$brand-danger-dark:     darken($brand-danger, 3%) !default;
+
+// $brand-warning: #f58410;
+// $brand-warning-dark: #e96300;
+
+
+$brand-link-color: $brand-primary !default; 
+
+// $border-radius-base: 3px;
+// $border-color-light: #DCDCDC;
+
+// --------------------------------------------------------------
+// Bootstrap variables are found in bootstrap/_variables.scss
+// --------------------------------------------------------------
+
+// Forms 
+// $input-border-focus: $brand-primary;
+// $input-border: #ddd !default;
+
+// Progress Bars
+// $progress-border-radius:      2px !default;
+
+// Typography 
+
+// $font-family-sans-serif:    "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+// $font-family-serif:         Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+// $font-family-monospace:     Menlo, Monaco, Consolas, "Courier New", monospace !default;
+// $font-family-base:          $font-family-sans-serif !default;
+$font-size-base:            14px !default;
+
+// --------------------------------------------------------------
+// Custom module variables  
+// --------------------------------------------------------------
+
+$table-hover-bg-color: #F2F7FA;

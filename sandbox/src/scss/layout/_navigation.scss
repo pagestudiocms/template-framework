@@ -1,0 +1,31 @@
+@media only screen and (min-width: 768px) {
+  .navbar-custom {
+    margin-bottom: 0;
+    background: #FFF;
+    // border-bottom: 1px solid red;
+  }
+  .navbar-custom .navbar-brand {
+    padding: 40px;
+    text-transform: uppercase;
+    // color: white;
+  }
+  .navbar-custom .navbar-brand:hover,
+  .navbar-custom .navbar-brand:focus {
+    // color: rgba(255, 255, 255, 0.8);
+  }
+  .navbar-custom .nav li {    
+    margin-left: 15px;
+    margin-right: 15px;
+    &:first-child {
+      margin-left: 0;
+    }
+    > a {
+      // color: white;
+      padding: 40px 0 40px 0;
+    }
+  } 
+  .navbar-custom .nav li a:hover,
+  .navbar-custom .nav li a:focus {
+    // color: rgba(255, 255, 255, 0.8);
+  }
+}

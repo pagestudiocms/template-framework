@@ -1,0 +1,131 @@
+@import "../../../src/scss/helpers/variables";
+
+@import "../../../src/scss/vendors/bootstrap/mixins";
+
+@import "../../../src/scss/vendors/matthieua-sass-css3-mixins/css3-mixins.scss"; // Mixins 
+
+@import "../../../src/scss/helpers/mixins"; // Mixins 
+
+// @import "../../../src/scss/style";
+
+.section {
+  background-color: #FFF;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+// Card one 
+
+.one {
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: cover;
+  min-height: 398px;
+
+  h3 {
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 600;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    width: 60%;
+    margin: 1.4em auto;
+  }
+  
+  h5 {
+    color: #d9d9d9;
+    line-height: 1.6em;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-bottom: 2em;
+  }
+
+  h6 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    padding-top: 2em;
+  }
+
+  span {
+    width: 2.6em;
+    height: 1px;
+    background: #fff;
+    display: block;
+    margin: 0.7em auto;
+  }
+
+  p {
+    color: #999999;
+    font-size: 0.85em;
+    letter-spacing: 1px;
+
+    a {
+      color: #999999;
+    }
+  }
+}
+
+// Card two 
+
+.two {
+  min-height: 398px;
+  margin-top: 10px;
+
+  img {
+    width: 100%;
+    min-height: 176px;
+  }
+  
+  a.newsmore {
+    color: #333333;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.4em;
+    margin-bottom: 0.7em;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .news {
+    padding: 1.7em;
+    background: #fff;
+    min-height: 222px;
+  
+    h5 {
+      color: #999999;
+      font-size: 1.08em;
+      font-weight: 400;
+      line-height: 1.6em;
+    }
+  
+    p {
+      a {
+        color: #aaaaaa;
+      }
+  
+      font-size: 0.85em;
+      color: #aaaaaa;
+      margin-bottom: 1em;
+  
+      span {
+        margin-right: 1em;
+        color: #007fff;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &.large-featured-image {
+    img {
+      min-height: 262px;
+    }
+    .news {
+      min-height: 130px;
+    }
+  }
+}

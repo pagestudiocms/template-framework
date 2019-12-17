@@ -1,0 +1,145 @@
+@import "../../../src/scss/helpers/variables";
+
+@import "../../../src/scss/vendors/bootstrap/mixins";
+
+@import "../../../src/scss/vendors/matthieua-sass-css3-mixins/css3-mixins.scss"; // Mixins 
+
+@import "../../../src/scss/helpers/mixins"; // Mixins 
+
+// @import "../../../src/scss/style";
+
+.work {
+  background-color: #FFF;
+  padding: 100px 0;
+
+  .project {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .project1 {
+    z-index: 99;
+  }
+
+  .project2, 
+  .project3 {
+    margin-top: -120px;
+  }
+
+  .project2 {
+    z-index: 98;
+  }
+
+  .project3 {
+    z-index: 97;
+  }
+
+  .media {
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+
+  .details {
+    padding: 80px;
+    background: #fdfcfc;
+
+    a {
+      text-decoration: none;
+    }
+
+    h1 {
+      color: #616771;
+      font-family: "raleway-semibold", arial;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+      line-height: 30px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #898d95;
+      font-family: "raleway-regular", arial;
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 30px;
+      margin-bottom: 40px;
+    }
+
+    .link_details {
+      color: #535659;
+      font-family: "raleway-regular", arial;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all .1s linear;
+      -webkit-transition: all .1s linear;
+
+      &:hover {
+        color: #fb874f;
+      }
+
+      .details_icon {
+        display: inline-block;
+        width: 13px;
+        height: 9px;
+        background: url('../img/more_icon.png') no-repeat;
+        background-position: 0 0;
+        margin-left: 3px;
+        transition: all .1s linear;
+        -webkit-transition: all .1s linear;
+      }
+
+      &:hover .details_icon {
+        background-position: 0 -10px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .media {
+      float: left;
+      width: 630px;
+      height: 370px;
+    }
+    .details {
+      float: right;
+      width: 470px;
+      margin-top: -120px;
+    }
+  }
+  
+  .more_projects {
+    display: block;
+    width: 50%;
+    float: left;
+  }
+
+  .all_work {
+    display: inline-block;
+    position: relative;
+    z-index: 999;
+    float: right;
+    margin: -40px 40px 0 0;
+    padding: 30px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-family: "raleway-regular", arial;
+    font-size: 14px;
+    background: #fb874f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+
+    &:hover {
+      background: #ec7236;
+    }
+  }
+}

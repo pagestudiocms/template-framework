@@ -1,0 +1,63 @@
+@import "../../../src/scss/helpers/variables";
+
+@import "../../../src/scss/vendors/bootstrap/mixins";
+
+@import "../../../src/scss/vendors/matthieua-sass-css3-mixins/css3-mixins.scss"; // Mixins 
+
+@import "../../../src/scss/helpers/mixins"; // Mixins 
+
+// @import "../../../src/scss/style";
+
+.bhb-pricing-table > {
+  .panel-heading {
+    border-bottom: none;
+    background: none;
+    background-color: transparent;
+
+    > .panel-title {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    padding: 10px 15px;
+  }
+
+  .panel-body {
+    text-align: center;
+
+    .price {
+      background-color: none;
+      font-size: 18px;
+      position: relative;
+      text-align: center;
+      padding-bottom: 25px;
+
+      > {
+        sup {
+          position: relative;
+          top: -32px;
+        }
+
+        .currency-symbol {
+          position: relative;
+          top: -28px;
+        }
+
+        em {}
+      }
+
+      strong {
+        display: inline-block;
+        font-size: 60px;
+        line-height: 60px;
+      }
+    }
+  }
+
+  .panel-footer {
+    text-align: center;
+    border-top: none;
+    background: none;
+    background-color: transparent;
+  }
+}

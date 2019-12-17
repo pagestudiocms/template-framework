@@ -1,0 +1,141 @@
+.pallete-items {
+  margin-left: -10px;
+}
+
+.pallete-item {
+  width: 140px;
+  float: left;
+  margin: 0 0 0 10px;
+  &.pallete-joined {
+    margin: 0;
+    width: 152px;
+    &:first-child, 
+    &:last-child {
+      width: 150px;
+    }
+    &:first-of-type .palette {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+    &:last-child .palette {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+}
+
+.palette-primary {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 48px 0 8px 10px;
+}
+
+.palette-secondary {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 18px 10px 8px 10px;
+}
+
+.palette-shade {
+  padding: 46px 0 10px 10px;
+}
+
+.palette {
+  font-size: 16px;
+  line-height: 1.214;
+  color: #ffffff;
+  margin: 0;
+  dt, dd {
+    line-height: 1.1;
+  }
+  dt {
+    display: block;
+    font-family: "SourceSansProSemiBold", Helvetica, Arial, sans-serif;
+  }
+  dd {
+    font-weight: 300;
+    margin-left: 0;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+}
+
+.palette-primary {
+  background-color: $brand-primary;
+}
+.palette-primary-dark {
+  background-color: $brand-primary-dark;
+}
+
+.palette-success {
+  background-color: $brand-success;
+}
+.palette-success-dark {
+  background-color: $brand-success-dark;
+}
+
+.palette-info {
+  background-color: $brand-info;
+}
+.palette-info-dark {
+  background-color: $brand-info-dark;
+}
+
+.palette-warning {
+  background-color: $brand-warning;
+}
+.palette-warning-dark {
+  background-color: $brand-warning-dark;
+}
+
+.palette-danger {
+  background-color: $brand-danger;
+}
+.palette-danger-dark {
+  background-color: $brand-danger-dark;
+}
+
+// Greys 
+
+.palette-the-black-flag {
+  background-color: #364347;
+}
+
+.palette-gunpowder {
+  background-color: #5e6969;
+}
+
+.palette-pieces-of-eight {
+  background-color: #93a4aa;
+}
+
+.palette-cutlass {
+  background-color: #b2c6cd;
+}
+
+.palette-coral {
+  background-color: #d6e1e5;
+}
+
+.palette-coastal-surf {
+  background-color: #e1eef3;
+}
+
+.palette-clouds {
+  color: #bdc3c7;
+}
+
+.palette-paragraph {
+  color: #7f8c8d;
+  font-size: 12px;
+  line-height: 17px;
+  span {
+    color: #bdc3c7;
+  }
+}
+
+.palette-headline {
+  color: #7f8c8d;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: -3px;
+}

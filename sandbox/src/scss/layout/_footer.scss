@@ -1,0 +1,41 @@
+// 
+// #Footer 04
+// 
+
+footer {
+  &.footer-04 {
+    display: block;
+    padding: 80px 0;
+    background: #2F3032;
+
+    .copyrights {
+      text-align: center;
+      color: #fff;
+      font-family: "raleway-regular", arial;
+      font-size: 14px;
+      letter-spacing: 1px;
+
+      .website {
+        text-decoration: none;
+        font-family: "raleway-semibold", arial;
+        font-weight: bold;
+      }
+    }
+
+    ul.social {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+
+      li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 15px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
