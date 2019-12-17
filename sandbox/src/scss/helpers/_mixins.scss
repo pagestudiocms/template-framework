@@ -2,3 +2,10 @@
 // Include theme specific mixins here... 
 // Be sure to check that your mixin doesn't already exist in ../../vendors
 //
+
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+@import "../vendors/bootstrap4-migration/mixins/text-truncate";
