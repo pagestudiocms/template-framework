@@ -46,7 +46,7 @@ https://graphicburger.com/one-page-website-wireframes/
 
 https://bigcatcreative.com/templates/luna-squarespace-template
 
-## Plan
+## Roadmap
 
 **Creativs**
 
