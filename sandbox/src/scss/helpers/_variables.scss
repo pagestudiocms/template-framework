@@ -43,12 +43,15 @@ $brand-link-color: $brand-primary !default;
 // Bootstrap variables are found in bootstrap/_variables.scss
 // --------------------------------------------------------------
 
-// Forms 
-// $input-border-focus: $brand-primary;
-// $input-border: #ddd !default;
+// Breackpoints 
 
-// Progress Bars
-// $progress-border-radius:      2px !default;
+$breakpoints: (
+  xlarge:   '(max-width: 1680px)',
+  large:    '(max-width: 1200px)',
+  medium:   '(max-width: 992px)',
+  small:    '(max-width: 768px)',
+  xsmall:   '(max-width: 480px)'
+);
 
 // Typography 
 

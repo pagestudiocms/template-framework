@@ -9,3 +9,25 @@
 }
 
 @import "../vendors/bootstrap4-migration/mixins/text-truncate";
+
+@mixin breakpoint($breakpoint: null, $queries: null) {
+
+  $query: 'screen';
+
+  // Breakpoint.
+  @if $breakpoint and map-has-key($breakpoints, $breakpoint) {
+    $query: $query + ' and ' + map-get($breakpoints, $breakpoint);
+  }
+
+  // Queries.
+  @if $queries {
+    @each $k, $v in $queries {
+      $query: $query + ' and (' + $k + ':' + $v + ')';
+    }
+  }
+
+  @media #{$query} {
+      @content;
+  }
+
+}

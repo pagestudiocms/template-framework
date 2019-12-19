@@ -37,11 +37,58 @@
       margin-bottom: 0.7em;
     }
     p {
-      color: #999999;
+      color: #999;
       font-size: 1.08em;
       font-weight: 400;
       line-height: 1.6em;
     }
+  }
+  .card-footer {
+    @include clearfix();
+    background: transparent;
+    border: none;
+    padding-top: 0;
+    padding-left: 1.7em;
+    padding-right: 1.7em;
+    padding-bottom: 1.7em;
+
+    .meta {
+      float: left;
+    }
+    .stats {
+      float: right;
+    }
+    .meta, .stats {
+      color: #999;
+      font-size: 0.82em;
+      > i {
+        color: #007fff;
+        font-size: 16px !important;
+      }
+    }
+
+    @include breakpoint(xsmall) {
+      .meta, 
+      .stats {
+        float: none;
+      }
+    }
+  }
+
+  //
+  // Card attributes and modifiers 
+  //
+  &.large-featured-image {
+    img {
+      min-height: 262px;
+    }
+    .news {
+      min-height: 130px;
+    }
+  }
+
+  &.card-hover:hover {
+    box-shadow: 0 14px 25px rgba(0,0,0,0.16);
   }
 }
 
@@ -122,67 +169,5 @@
 .one {
   &.card-hover:hover {
     box-shadow: 0 14px 25px rgba(0,0,0,0.16);
-  }
-}
-
-// Card two 
-
-.two {
-  min-height: 398px;
-
-  img {
-    width: 100%;
-    min-height: 176px;
-  }
-  
-  a.newsmore {
-    color: #333333;
-    font-size: 1.2em;
-    font-weight: 700;
-    line-height: 1.4em;
-    margin-bottom: 0.7em;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .news {
-    padding: 1.7em;
-    background: #fff;
-    min-height: 222px;
-  
-    h5 {
-      color: #999999;
-      font-size: 1.08em;
-      font-weight: 400;
-      line-height: 1.6em;
-    }
-  
-    p {
-      a {
-        color: #aaaaaa;
-      }
-  
-      font-size: 0.85em;
-      color: #aaaaaa;
-      margin-bottom: 1em;
-  
-      span {
-        margin-right: 1em;
-        color: #007fff;
-        font-size: 0.9em;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-weight: 600;
-      }
-    }
-  }
-
-  &.large-featured-image {
-    img {
-      min-height: 262px;
-    }
-    .news {
-      min-height: 130px;
-    }
   }
 }
