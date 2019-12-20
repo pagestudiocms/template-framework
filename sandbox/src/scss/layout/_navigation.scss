@@ -16,7 +16,7 @@ $bar-bg-color: #000;
 
       .navbar-toggle-burger {
         width: $bar-width;
-        height: 3px;
+        height: $bar-height;
         position: relative;
         top: -6px;
         transform: translateY($bar-spacing);

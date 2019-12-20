@@ -82,8 +82,30 @@
 	-moz-osx-font-smoothing: grayscale;
 } 
 
+$bar-bg-color: #FFF;
 .header-01 {
 	&.header-with-navbar {
+    @media only screen and (min-width: $screen-xs){
+      .navbar {
+        &.navbar-clear {
+          .navbar-toggle {
+            .navbar-toggle-burger {
+              background: transparent;
+              background-color: transparent;
+              &:after, 
+              &:before {
+                background: $bar-bg-color;
+              }
+            }
+            &.collapsed .navbar-toggle-burger {
+              background: $bar-bg-color;
+              background-color: $bar-bg-color;
+            }
+          }
+        }
+      }
+    }
+
 	  @media only screen and (min-width: $screen-sm) {
       padding-top: 0;
       .navbar {
@@ -108,11 +130,15 @@
         }
       }
     }
+    
     @media only screen and (max-width: ($screen-sm - 1px)) {
       .navbar {
         &.navbar-clear {
-          background: #FFF;
-          background-color: #FFF;
+          background: transparent;
+          background-color: transparent;
+          .navbar-brand {
+            color: #FFF;
+          }
         }
       }
     }
