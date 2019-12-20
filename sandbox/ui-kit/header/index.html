@@ -13,7 +13,9 @@
     <meta name="robots" content="index,follow" />
     
     <!-- Fonts -->
-	<link rel="stylesheet" href="../../build/assets/fonts/icomoon/css/icomoon.css">
+    <link rel="stylesheet" href="../../build/assets/fonts/icomoon/css/icomoon.css">
+    <link rel="stylesheet" href="../../build/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../build/assets/fonts/line-awesome/css/line-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:300,400,500,700,800" rel="stylesheet">
     
@@ -31,7 +33,7 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../../build/assets/css/style.css?v=1">
-    <!-- <link rel="stylesheet" href="css/style.css?v=1"> -->
+    <link rel="stylesheet" href="css/style.css?v=1">
     
     <link rel="stylesheet" href="../assets/ui-kit-docbar.css" />
         
@@ -49,7 +51,7 @@
 </head>
 <body class="bootstrap-offcanvas">
 
-<div class="fh5co-loader"></div>
+<!-- <div class="fh5co-loader"></div> -->
 
 <nav class="dockbar navbar-fixed-top" id="header-dockbar">
     <menu class="main-menu">
@@ -81,43 +83,43 @@
 
 <div class="site-container" role="site-container">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-custom /*navbar-fixed-top*/">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="index.html">Space</a>
-            </div>
+    <div class="delimiter"></div> <!-- spacer between each component block -->
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="post.html">Sample Post</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
     <header class="header-01 intro-header" style="background-image: url('../../demo/images/openroad.jpg'); height: 550px;">
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-one-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Space</a>
+                </div>
+    
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="example-navbar-one-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="post.html">Sample Post</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -133,11 +135,107 @@
 
     <div class="delimiter"></div> <!-- spacer between each component block -->
     
-    <main class="content-container" role="main">
+    <!-- Set your background image for this header on the line below. -->
+    <header class="header-01 intro-header header-with-navbar" style="background-image: url('../../demo/images/openroad.jpg'); height: 550px;">
+        <!-- Navigation -->
+        <nav class="navbar navbar-clear">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-two-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <div class="navbar-toggle-burger"></div>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Space</a>
+                </div>
     
-        
-        
-    </main>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="example-navbar-two-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="post.html">Sample Post</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Space Exploration</h1>
+                        <hr class="small">
+                        <span class="subheading">Start writing your content today</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="delimiter"></div> <!-- spacer between each component block -->
+
+    <!-- Set your background image for this header on the line below. -->
+    <header class="header-01 intro-header" style="background-image: url('../../demo/images/openroad.jpg'); height: 550px;">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-three-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <div class="navbar-toggle-burger"></div>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Space</a>
+                </div>
+    
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="example-navbar-three-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="post.html">Sample Post</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Space Exploration</h1>
+                        <hr class="small">
+                        <span class="subheading">Start writing your content today</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="delimiter"></div> <!-- spacer between each component block -->
+    
+    <main class="content-container" role="main"></main>
 
 </div>
 

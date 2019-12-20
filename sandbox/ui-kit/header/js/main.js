@@ -24,6 +24,8 @@
 	};
 
 	$(function(){
-	
+		$('.navbar-collapse').on('shown.bs.collapse', function(e) {
+      //  Do nothing... menu is open 
+		})
 	});
 }());
