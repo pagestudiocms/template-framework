@@ -1,0 +1,77 @@
+.fh5co-overlay {
+	position: absolute !important;
+	width: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	background: rgba(48,56,65,.35);
+}
+
+.fh5co-cover {
+	height: 800px;
+	position: relative;
+  width: 100%;
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+  overflow: hidden;
+	.overlay {
+		z-index: 0;
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: rgba($inverse-base-color,.4);
+	}
+	// > .fh5co-container {
+	// 	position: relative;
+	// 	z-index: 10;
+	// }
+	@media screen and (max-width: $screen-sm) {
+		height: 600px;
+	}
+	.display-t,
+	.display-tc {
+		z-index: 9;
+		height: 700px;
+		display: table;
+		width: 100%;
+		margin-top: 100px;
+		@media screen and (max-width: $screen-sm) {
+			height: 600px;
+		}
+  }	
+  
+  //
+  // Variant sizes 
+  //
+
+	&.fh5co-cover__small {
+		height: 600px;
+		@media screen and (max-width: $screen-sm) {
+			height: 400px;
+		}
+		.display-t,
+		.display-tc {
+			height: 600px;
+			display: table;
+			width: 100%;
+			@media screen and (max-width: $screen-sm) {
+				height: 400px;
+			}
+		}	
+	}
+  
+  &.fh5co-cover__mini {
+		height: 300px;
+    .blog-entry-header__heading {
+      top: 140px;
+    }
+		@media screen and (max-width: $screen-sm) {
+			height: 300px;
+		}
+  }
+}

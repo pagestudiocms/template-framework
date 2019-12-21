@@ -234,6 +234,31 @@
     </header>
 
     <div class="delimiter"></div> <!-- spacer between each component block -->
+
+    <article class="blog-entry">
+
+        <header class="blog-entry-header">
+            <div class="fh5co-overlay"></div>
+            <div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(../../demo/images/cover_bg_2.jpg);">
+                <div class="blog-entry-header__heading">
+                    <ul class="blog-entry-header__heading--category-list">
+                        <li class="first"><a>Content Strategy</a></li>
+                        <li><a>Responsive Design</a></li>
+                        <li class="last"><a>User Experience Design</a></li>
+                    </ul>
+                    <h1>Man must explore, and this is exploration at its greatest</h1>
+                </div>
+                <div class="blog-entry-header__author-content">
+                    <img class="avatar" src="../../demo/images/person_1.jpg" alt="" />
+                    <p>Posted by <span itemprop="author"><a href="#">Michelle Perelli, Author of Book</a></span></p>
+                    <p>on <time datetime="2016-12-07T12:09:01+00:00" itemprop="dateCreated">December 7, 2016</time></p>
+                </div>
+            </div>
+        </header>
+
+    </article>
+
+    <div class="delimiter"></div> <!-- spacer between each component block -->
     
     <main class="content-container" role="main"></main>
 
@@ -257,6 +282,8 @@
 	<script src="../../build/assets/vendors/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     
     <script src="../../build/assets/vendors/bootstrap-offcanvas/js/bootstrap.offcanvas.min.js"></script>
+
+    <script src="../../build/assets/vendors/stellar/0.6.2/jquery.stellar.min.js"></script>
     
     <!-- Common files -->
     <script src="../assets/ui-kit-dockbar.js"></script>
@@ -266,7 +293,10 @@
     
     <script type="text/javascript">
     $(document).ready(function(){
-        
+        $.stellar({
+            horizontalScrolling: false,
+            verticalOffset: 40
+        });
     });
     </script>
 </body>
