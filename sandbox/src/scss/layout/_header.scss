@@ -26,10 +26,6 @@
 		right: 0;
 		background: rgba($inverse-base-color,.4);
 	}
-	// > .fh5co-container {
-	// 	position: relative;
-	// 	z-index: 10;
-	// }
 	@media screen and (max-width: $screen-sm) {
 		height: 600px;
 	}
@@ -73,5 +69,33 @@
 		@media screen and (max-width: $screen-sm) {
 			height: 300px;
 		}
+  }
+}
+
+
+.intro-header {
+  &.overlay {
+    position: relative;
+    &:after {
+      position: absolute;
+      content:"";
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      opacity: .5;
+      background: rgba(48,56,65,.35);
+    }
+    
+    &:after  {
+      opacity: .5;
+    }
+  }
+  
+  &.red:after {
+    background-color: red;
+  }
+  .navbar {
+    z-index: 2;
   }
 }
