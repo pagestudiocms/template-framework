@@ -1,73 +1,80 @@
 .footer-02 {
   padding-bottom: 70px;
 
-  .footer11_nav {
-    height: 120px;
+  .footer-top-nav {
+    @media only screen and (min-width: $screen-sm){
+      padding: 25px;
+      ul, ol {
+        margin-top: 10.5px;
+      }
+    }
+    margin-bottom: 3em;
     border-bottom: 1px solid #f2f2f2;
-    a {
-      display: inline-block;
-      margin-right: 35px;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      line-height: 119px;
-      font-size: 14px;
-      color: #3a3d4b;
-      &:focus {
+
+    ul {
+      @media only screen and (min-width: $screen-sm){ 
+        padding-left: 0;
+      }
+
+      li {
         display: inline-block;
+        a {
+          color: #3a3d4b;
+          font-size: 13px;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+        }
         margin-right: 35px;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-        line-height: 119px;
-        font-size: 14px;
-        color: #3a3d4b;
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
       }
-      &:hover {
-        opacity: 0.7;
-      }
+    }
+  }
+  .footer-brand-logo {
+    color: #222328;
+    display: inline-block;
+    font-family: $font-family-sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    &:hover {
+      text-decoration: none;
     }
   }
 
-  .left {
-    float: left;
-    margin-top: 70px;
-    width: 270px;
-    margin-right: 30px;
-    vertical-align: top;
-    .nav11_logo {
-      font-size: 26px;
-      margin-bottom: 15px;
-      color: #222328;
-      display: block;
-    }
-  }
-  .footer11_text {
-    width: 570px;
-    font-weight: 300;
-    opacity: 0.4;
-    color: #8c8f94;
+  .about-text {
+    color: rgba(0, 0, 0, 0.45);
     font-size: 16px;
     line-height: 26px;
   }
-  .socials {
-    float: right;
-    margin-top: 85px;
-    a {
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      border: 2px solid #e5e5e5;
-      background: url(../img/footer11_socials.png) no-repeat 0 50%;
-      margin-left: 15px;
-      &.fb {
-        background-position: -70px 50%;
-      }
-      &.db {
-        background-position: -140px 50%;
-      }
-      &:hover {
-        opacity: 0.6;
-        border-color: #222328;
+  
+  .footer-socials {
+    @extend .list-inline;
+    li {
+      margin-right: 15px;
+      a {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 15px;  
+        border-radius: 50%;
+        border: 2px solid rgba(0, 0, 0, 0.15);
+        i {
+          color: rgba(0, 0, 0, 0.35);
+          font-size: 1.25em;
+        }
+
+        &:hover {
+          border-color: rgba(0, 0, 0, 0.5);
+          i {
+            color: rgba(0, 0, 0, 0.9);
+          }
+          text-decoration: none;
+        }
       }
     }
   }

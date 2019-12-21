@@ -10,8 +10,9 @@
 
 @import "../vendors/bootstrap4-migration/mixins/text-truncate";
 
-@mixin breakpoint($breakpoint: null, $queries: null) {
+@import "../vendors/my-sass-mixins/mixins";
 
+@mixin breakpoint($breakpoint: null, $queries: null) {
   $query: 'screen';
 
   // Breakpoint.
@@ -29,5 +30,4 @@
   @media #{$query} {
       @content;
   }
-
 }

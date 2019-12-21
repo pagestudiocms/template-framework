@@ -10,35 +10,23 @@ $brand-body-color: #fcfcfc;
 $brand-body-bg: #fff;
 $brand-dark-footer: #222831;
 
-
 $input-border-focus: $brand-primary;
 $form-group-margin-bottom: 30px;
 
-#footer-03 {
-	background: #2F3032;
+.footer-03 {
+  color: rgba(255, 255, 255, 0.4);
 	padding: 6em 0 0 0;
-	width: 100%;
-	float: left;
+	background: $inverse-base-color;
 	@media screen and (max-width: $screen-sm) {
 		padding: 3em 0;
-	}
+  }
+  
 	h2, h3, h4 {
 		color: rgba($brand-white,.8);
-		text-transform: uppercase;
+    text-transform: uppercase;
+    margin-bottom: 1.7em;
 	}
-	h3 {
-		font-size: 16px;
-	}
-	[class*="col"] {
-		padding-bottom: 30px;
-	}
-	.btn {
-		color: $brand-white;
-	}
-	.float {
-		float: left;
-		margin-right: 10%;
-	}
+
 	ul {
 		padding: 0;
 		margin: 0;
@@ -55,7 +43,7 @@ $form-group-margin-bottom: 30px;
 			}
 		}
 	}
-	.fh5co-social {
+	.footer-social-links {
 		li {
 			display: block !important;
 			a{
@@ -68,21 +56,18 @@ $form-group-margin-bottom: 30px;
 			}
 		}
 	}
-	.fh5co-copyright {
-		border-top: 1px solid rgba(255,255,255,.1);
-		// clear: both;
-		margin-top: 40px!important;
-		padding: 3em;
-		width: 100%;
-		float: left;
+	.footer-copyright {
+    font-size: 0.85em;
+		margin-top: 40px !important;
+		padding: 3em 3em 5em;
 		span {
 			display: block;
-			a{
+			a {
 				color: rgba($brand-white,.8);
 			}
 		}
 		@media screen and (max-width: $screen-xs) {
-			text-align: left!important;
+			text-align: left !important;
 			span {
 				display: inline;
 			}

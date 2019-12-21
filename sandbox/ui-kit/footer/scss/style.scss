@@ -1,12 +1,20 @@
-@import "../../../assets/scss/vendors/bootstrap/variables";
+//---------------------------------------------------------------------
+// Global variables  
+//---------------------------------------------------------------------
 
-@import "../../../assets/scss/vendors/bootstrap/mixins";
+@import "../../../src/scss/helpers/variables";
+@import "../../../src/scss/helpers/bootstrap";
 
-@import "../../../assets/scss/vendors/css3-mixins/css3-mixins.scss"; // Mixins 
 
-@import "../../../assets/scss/helpers/mixins"; // Mixins 
+//---------------------------------------------------------------------
+// Mixins
+//---------------------------------------------------------------------
 
-@import "../../../assets/scss/style";
+@import "../../../src/scss/vendors/bootstrap/mixins";
+
+@import "../../../src/scss/vendors/matthieua-sass-css3-mixins/css3-mixins.scss";
+
+@import "../../../src/scss/helpers/mixins";
 
 // Font-weights
 // --------------------------
@@ -40,19 +48,35 @@ body {
   background-color: $body-background-color;
 }
 
+// List options
+
+// [converter] extracted from `.list-unstyled` for libsass compatibility
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+// [converter] extracted as `@mixin list-unstyled` for libsass compatibility
+.list-unstyled {
+  @include list-unstyled;
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+  @include list-unstyled;
+  margin-left: -5px;
+
+  > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
 @import "ui-kit-footer-01";
 
 @import "ui-kit-footer-02"; 
 
 @import "ui-kit-footer-03"; 
-
-.page-wrapper {
-  background: #fcfcfc !important;
-}
-
-.delimeter {
-  
-}
 
 .footer-01 {
   background: #FFF;
