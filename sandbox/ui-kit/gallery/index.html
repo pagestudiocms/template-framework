@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Content</title>
+    <title>Galleries</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -13,14 +13,23 @@
     <meta name="robots" content="index,follow" />
     
     <!-- Fonts -->
-	<link rel="stylesheet" href="../../build/assets/fonts/icomoon/css/icomoon.css">
-	<link rel="stylesheet" href="../../build/assets/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../build/assets/fonts/icomoon/css/icomoon.css">
+    <link rel="stylesheet" href="../../build/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../build/assets/fonts/line-awesome/css/line-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:300,400,500,700,800" rel="stylesheet">
     
     <!-- Animate.css -->
 	<link rel="stylesheet" href="../../build/assets/vendors/animate/3.5.1/animate.min.css">
     
 	<link rel="stylesheet" href="../../build/assets/vendors/bootstrap/3.3.6/css/bootstrap.min.css">
+	
+    <!-- Offcanvas -->
+	<link rel="stylesheet" href="../../build/assets/vendors/bootstrap-offcanvas/css/bootstrap.offcanvas.min.css">
+    
+    <!-- Owl Carousel  -->
+	<link rel="stylesheet" href="../../build/assets/vendors/owl-carousel/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../../build/assets/vendors/owl-carousel/css/owl.theme.default.min.css">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../../build/assets/css/style.css?v=1">
@@ -40,7 +49,9 @@
 	<script src="../../build/assets/vendors/modernizr/modernizr-2.8.3.min.js"></script>
     
 </head>
-<body>
+<body class="bootstrap-offcanvas">
+
+<!-- <div class="fh5co-loader"></div> -->
 
 <nav class="dockbar navbar-fixed-top" id="header-dockbar">
     <menu class="main-menu">
@@ -52,11 +63,11 @@
                 </a>
                 <button id="open-close-menu" class="menu-btn btn-inverse"><span class="fui-list"></span></button>
                 <dl class="col-sm-8 js-dockbar-navbar-list">
-                    <dd><a class="" href="../header/index.html">header</a></dd>
-                    <dd><a class="active">content 1</a></dd>
+                    <dd><a href="../header/index.html">header</a></dd>
+                    <dd><a href="../content/content-01.html">content 1</a></dd>
                     <dd><a href="../content/content-02.html">content 2</a></dd>
                     <dd><a href="../footer/index.html">footer</a></dd>
-                    <dd><a href="../gallery/index.html">Gallery</a></dd>
+                    <dd><a class="active">Gallery</a></dd>
                     <dd><a href="../price/price-01.html">price table</a></dd>
                     <dd><a href="../blog/blog-01.html">blog</a></dd>
                     <dd><a class="disabled">crew</a></dd>
@@ -72,60 +83,32 @@
 
 <div class="site-container" role="site-container">
 
-    <main class="content-container" role="main">
+    <div class="delimiter"></div> <!-- spacer between each component block -->
     
-        <!--  start projects section  -->
-        <section class="work clearfix">
-            <div class="container">
-                <h2 class="title">Our Work</h2>
+    <main class="content-container" role="main"></main>
 
-                <article class="project project1">
-                    <header class="media">
-                        <a href="#"><img src="../../demo/images/project1.jpg" alt="" title=""></a>
-                    </header>
-                    <div class="details">
-                        <a href="#">
-                            <h1>Excepteur occaecat cupidatat</h1>
-                        </a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo ...</p>
-                        <a href="#" class="link_details">details <span class="details_icon"></span></a>
-                    </div>
-                </article>
-                
-                <article class="project project2">
-                    <header class="media">
-                        <a href="#"><img src="../../demo/images/project2.jpg" alt="" title=""></a>
-                    </header>
-                    <div class="details">
-                        <a href="#">
-                            <h1>Excepteur occaecat cupidatat</h1>
-                        </a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo ...</p>
-                        <a href="#" class="link_details">details <span class="details_icon"></span></a>
-                    </div>
-                </article>
-                
-                <div class="more_projects">
-                    <a href="#" class="all_work">More Projects</a>
-                </div>
-            </div>
-        </section>
-        <!--  end projects section  -->
-    
-        <div class="delimiter"></div> <!-- spacer between each component block -->
-        
-    </main>    
+</div>
 
-</div><!-- end .page-wrapper -->
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
+
     
 <!-- JavaScript
 ================================================================= -->
 
-    <!-- jQuery -->
+	<!-- jQuery -->
 	<script src="../../build/assets/vendors/jquery/jquery-2.1.4.min.js"></script>
+    
+	<!-- jQuery Easing -->
+	<!-- <script src="../../assets/js/jquery.easing.1.3.js"></script> -->
     
 	<!-- Bootstrap -->
 	<script src="../../build/assets/vendors/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <script src="../../build/assets/vendors/bootstrap-offcanvas/js/bootstrap.offcanvas.min.js"></script>
+
+    <script src="../../build/assets/vendors/stellar/0.6.2/jquery.stellar.min.js"></script>
     
     <!-- Common files -->
     <script src="../assets/ui-kit-dockbar.js"></script>
@@ -135,7 +118,10 @@
     
     <script type="text/javascript">
     $(document).ready(function(){
-        
+        $.stellar({
+            horizontalScrolling: false,
+            verticalOffset: 40
+        });
     });
     </script>
 </body>
