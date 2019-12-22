@@ -2,102 +2,11 @@
 // Blog single post 
 //------------------------------------------------------------------------
 
-.intro-header {
-  .blog-entry-header {
-    position: relative;
-    @extend %clearfix;
-    margin-bottom: 60px;
-    h1 {
-      color: #FFF;
-      font-size: 50px;
-      line-height: 1.2em;
-    }
-    .subheading {
-      font-size: 38px;  
-    }
-    .meta {
-      font-size: 18px;
-      font-style: italic;
-    }
-    @media (max-width: 767px) {
-      h1 {
-        font-size: 30px;
-      }
-      .meta {
-        font-size: 14px;
-      }
-    }
-    .blog-entry-header__heading {
-      position: relative;
-      top: 30%;
-      max-width: 992px;
-      margin-left: auto;
-      margin-right: auto;
-      z-index: 2;
-      
-      .blog-entry-header__heading--category-list {
-        li {
-          list-style: none;
-          display: inline-block;
-          a {
-            color: #FFF;
-            font-size: 11px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            &:hover {
-              color: inherit;
-            }
-          }
-          &::after {
-            content: "/";
-            padding-left: 10px;
-            padding-right: 10px;
-          }
-          &:last-child {
-            &::after {
-              content: "";
-            }
-          }
-        }
-      }
-    }
-    .blog-entry-header__author-content {
-      position: relative;
-      top: 35%;
-      bottom: 0;
-      z-index: 2;
+.blog-entry {
+  //
+  // Article body categories 
+  //
 
-      // transform: translateX(-50%);
-
-      img {
-        width: 70px;
-        height: auto;
-        border-radius: 50%;
-        &.avatar {
-          color: inherit;
-        }      
-      }
-      p {
-        color: #FFF;
-        font-size: 16px;
-        font-style: italic;
-        margin: 0 auto;
-        a {
-          color: inherit;
-          font-weight: bold;  
-        }
-        span {
-          font-size: 16px;
-          margin-bottom: 0;
-        }
-        time {
-          font-size: 16px;        
-        }
-      }
-    }
-  }
-  
   .blog-entry-categories { 
     .blog-entry-categories__wrapper {
       @extend .container;
@@ -109,7 +18,7 @@
         margin-bottom: 10px;
       }
       .blog-entry-categories__list {
-        color: #58595B;
+        color: #FFF;
         font-size: 14px;
         list-style: none;
         padding: 0;
@@ -127,7 +36,6 @@
           }
           a {
             color: inherit;
-            // font-weight: $font-weight-light;
           }
         }
       }
