@@ -16,3 +16,82 @@
 
 @import "../../../src/scss/helpers/mixins"; 
 
+$brand-black: #212121;
+$brand-white: #FFF;
+.portfolio-grid {
+  .porfolio,
+  .portfolio {
+    > a {
+      display: block;
+      color: $brand-black;
+      position: relative;
+      bottom: 0;
+      overflow: hidden;
+      @include transition(.5s);
+      img {
+        position: relative;
+        @include transition(.5s);
+      }
+      &:after {
+        opacity: 0;
+        visibility: hidden;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        @include box-shadow(inset 0px, -34px, 98px, 8px, rgba(0,0,0,0.75));
+        z-index: 8;
+        @include transition(.5s)
+      }
+      h3, 
+      span {
+        z-index: 12;
+        position: absolute;
+        right: 20px;
+        left: 20px;
+        bottom: 50px;
+        color: $brand-white;
+        margin: 0;
+        padding: 0;
+        opacity: 1;
+        font-size: 30px;
+        font-weight: 300;
+        visibility: visible;
+        @include transition(.3s);
+      }
+      span{
+        font-size: 14px;
+        bottom: 20px;
+      }
+      &:hover {
+        @include box-shadow(0px, 18px, 45px, -10px, rgba(0,0,0,0.45));
+  
+        &:after {
+          opacity: 1;
+          visibility: visible;
+          @media screen and (max-width: $screen-sm ) {
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+        h3 {
+          opacity: 1;
+          bottom: 55px;
+        }
+        span {
+          opacity: 1;
+          bottom: 15px;
+        }
+        img {
+          @include transform(scale(1.05));
+  
+          @media screen and (max-width: $screen-sm ) {
+            @include transform(scale(1.0));
+          }
+        }
+      }
+    }
+  }
+}
