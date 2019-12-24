@@ -1,28 +1,47 @@
 
-.mobile-overlay-nav {
-  background-color: #212121;
-  .modal-nav-content {
+.mobile-nav-overlay.modal {
+  background-color: rgba(#000, 1);
+  opacity: 0.93;
+  z-index: 1041;
+  .mobile-nav-content {
     width: 100%;
     height: auto;
-    .modal-nav-body {
+    .mobile-nav-body {
       margin-top: 100px; 
+      .nav,
       ul {
         list-style-type: none;
         color: white;
         margin: 0;
         padding: 0;
         width: 100%;
-        li {
+        > li {
           text-align: center;
           font-size: 130%;
           padding: 8px;
           text-transform: uppercase;
-          a {
+          > a {
             color: rgba(255, 255, 255, 0.97);
+            &:hover, 
+            &:focus {
+              background-color: transparent;
+              color: rgba(255, 255, 255, 0.75);
+            }
           }
         }
       }
     }
   }
-  
+}
+
+.mobile-overlay-visible {
+  .navbar {
+    z-index: 1042;
+    transition: background-color 0.75s linear;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    .navbar-brand {
+      display: none;
+    } 
+  }
 }

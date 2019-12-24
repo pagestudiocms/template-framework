@@ -23,7 +23,7 @@
         $mobileNavToggler[0].dataset.toggle = `modal`;
         initMobileNavOverlayEvent(targetOriginal);
       break;
-      default: 
+      default:
         $mobileNavToggler[0].dataset.target = `#${targetOriginal}`;
         $mobileNavToggler[0].dataset.toggle = 'collapse';
     }
@@ -33,7 +33,7 @@
     if(typeof window.initMobileOverlay === 'undefined'){
       $(`#${el}-overlay`).on('show.bs.modal', function(e){
         var target = e.currentTarget;
-        var $modalContent = $(target).find('.modal-nav-body');
+        var $modalContent = $(target).find('.mobile-nav-body');
         const excludes = ['navbar-left', 'navbar-right'];
 
         if(typeof $modalContent.find('.navbar-nav')[0] === 'undefined'){
@@ -41,9 +41,16 @@
           var list = $topNav.clone();
           list.children().each(function(k,el){
             el.classList.remove(...excludes);
-            $(target).find('.modal-nav-body').append(el);
+            $(target).find('.mobile-nav-body').append(el);
           });
         }
+
+        $('.navbar-toggle').removeClass('collapsed');
+        $('body').addClass('mobile-overlay-visible');
+      });
+      $(`#${el}-overlay`).on('hide.bs.modal', function(e){
+        $('.navbar-toggle').addClass('collapsed');
+        $('body').removeClass('mobile-overlay-visible'); 
       });
       window.initMobileOverlay = true;
     }
