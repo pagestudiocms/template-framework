@@ -1,0 +1,28 @@
+
+.mobile-overlay-nav {
+  background-color: #212121;
+  .modal-nav-content {
+    width: 100%;
+    height: auto;
+    .modal-nav-body {
+      margin-top: 100px; 
+      ul {
+        list-style-type: none;
+        color: white;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        li {
+          text-align: center;
+          font-size: 130%;
+          padding: 8px;
+          text-transform: uppercase;
+          a {
+            color: rgba(255, 255, 255, 0.97);
+          }
+        }
+      }
+    }
+  }
+  
+}
