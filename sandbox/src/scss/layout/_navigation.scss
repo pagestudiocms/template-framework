@@ -2,6 +2,87 @@ $bar-width: 20px;
 $bar-height: 2px;
 $bar-spacing: 6px;
 $bar-bg-color: #000;
+$mobile-overlay-close-btn: rgba(255, 255, 255, 0.97);
+$mobile-overlay-close-btn-size: 25px;
+
+//
+// Mobile overlay 
+// 
+
+.mobile-nav-overlay.modal {
+  background-color: rgba(#000, 1);
+  opacity: 0.93;
+  z-index: 1041;
+  .close-modal {
+    position: absolute;
+    width: $mobile-overlay-close-btn-size;
+    height: $mobile-overlay-close-btn-size;
+    background-color: transparent;
+    top: 25px;
+    right: 35px;
+    cursor: pointer;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+    }
+    .lr {
+      height: $mobile-overlay-close-btn-size;
+      width: 2px;
+      margin-left: 21px;
+      background-color: $mobile-overlay-close-btn;
+      @include transform( rotate(45deg) );
+      z-index: 1051;
+      .rl {
+        height: $mobile-overlay-close-btn-size;
+        width: 2px;
+        background-color: $mobile-overlay-close-btn;
+        @include transform( rotate(90deg) );
+        z-index: 1052;
+      }
+    }        
+  }
+  .mobile-nav-content {
+    width: 100%;
+    height: auto;
+    .mobile-nav-body {
+      margin-top: 100px; 
+      .nav,
+      ul {
+        list-style-type: none;
+        color: white;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        > li {
+          text-align: center;
+          font-size: 130%;
+          padding: 8px;
+          text-transform: uppercase;
+          > a {
+            color: rgba(255, 255, 255, 0.97);
+            &:hover, 
+            &:focus {
+              background-color: transparent;
+              color: rgba(255, 255, 255, 0.75);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.mobile-overlay-visible {
+  #navbar-two.navbar {
+    z-index: 1042;
+    transition: background-color 0.75s linear;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    .navbar-brand {
+      display: none;
+    } 
+  }
+}
 
 @media only screen and (max-width: ($screen-sm - 1px)){
   .navbar {
