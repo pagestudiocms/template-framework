@@ -126,7 +126,7 @@
             </div>
         </nav>
         
-        <div style="padding-top:200px;padding-bottom:200px; background-image: url('../../demo/images/openroad.jpg'); height: 550px;">
+        <div class="background-cover" style="padding-top:200px;padding-bottom:200px; background-image: url('../../demo/images/openroad.jpg'); height: 550px;">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-2"></div>
@@ -140,23 +140,30 @@
     </div>
     
     <div class="delimiter"></div> <!-- spacer between each component block -->
-
-    <!-- Set your background image for this header on the line below. -->
-    <header class="header-01 hero-header" style="background-image: url('../../demo/images/openroad.jpg'); height: 550px;">
-        <!-- Navigation -->
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header page-scroll">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-one-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        Menu <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand" href="index.html">Space</a>
-                </div>
     
+    <div class="site-container-02">
+        <nav class="navbar navbar-clear" role="navigation" data-content-field="header-content" data-navbar-type="offcanvas" role="header">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="{{ site_url }}" class="navbar-brand">
+                        <!--
+                            <img src="https://placehold.it/200x75" class="site-logo-image" alt="" />
+                        -->
+                        <span class="text-muted">Space</span>
+                    </a>
+                    <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-overlay-one" data-target-original="example-overlay-one"> -->
+                    <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#example-offcanvas-two" data-target-original="#example-offcanvas-two">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                        </span>
+                    </button>
+                </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="example-navbar-one-collapse">
+                <div class="navbar-offcanvas navbar-offcanvas-touch" id="example-offcanvas-two">
+                <!-- <div class="collapse navbar-collapse" id="example-overlay-one"> -->
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <a href="index.html">Home</a>
@@ -174,89 +181,46 @@
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
-            <!-- /.container -->
         </nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>Space Exploration</h1>
-                        <hr class="small">
-                        <span class="subheading">Start writing your content today</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="delimiter"></div> <!-- spacer between each component block -->
-    
-    <!-- Set your background image for this header on the line below. -->
-    <header class="header-01 hero-header header-with-navbar" style="background-image: url('../../demo/images/openroad.jpg'); height: 550px;">
-        <!-- Navigation -->
-        <nav id="navbar-two" class="navbar navbar-clear">
+        
+        <div class="demo-header background-cover" style="padding-top:200px;padding-bottom:200px; background-image: url('../../demo/images/openroad.jpg'); height: 550px;">
             <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header page-scroll">
-                    <button type="button" id="navbar-nav-toggle-old" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-two-collapse" data-target-original="example-navbar-two-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <div class="navbar-toggle-burger"></div>
-                    </button>
-                    <a class="navbar-brand" href="index.html">Space</a>
-                </div>
-    
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="example-navbar-two-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>
-                        <li>
-                            <a href="post.html">Sample Post</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container -->
-        </nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>Space Exploration</h1>
-                        <hr class="small">
-                        <span class="subheading">Start writing your content today</span>
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <h1 style="text-align:center;color:#ffffff;">About Our Company</h1>
                     </div>
+                    <div class="col-sm-2"></div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
     <div class="delimiter"></div> <!-- spacer between each component block -->
 
-    <!-- Set your background image for this header on the line below. -->
-    <header class="header-01 hero-header" style="background-image: url('../../demo/images/openroad.jpg'); height: 550px;">
-        <!-- Navigation -->
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header page-scroll">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-three-collapse">
+    <div class="site-container-03">
+        <nav class="navbar navbar-default" role="navigation" data-content-field="header-content" data-navbar-type="offcanvas" role="header">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="{{ site_url }}" class="navbar-brand">
+                        <!--
+                            <img src="https://placehold.it/200x75" class="site-logo-image" alt="" />
+                        -->
+                        <span class="text-muted">Space</span>
+                    </a>
+                    <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-overlay-one" data-target-original="example-overlay-one"> -->
+                    <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#example-offcanvas-three" data-target-original="#example-offcanvas-three">
                         <span class="sr-only">Toggle navigation</span>
-                        <div class="navbar-toggle-burger"></div>
+                        <span>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                        </span>
                     </button>
-                    <a class="navbar-brand" href="index.html">Space</a>
                 </div>
-    
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="example-navbar-three-collapse">
+                <div class="navbar-offcanvas navbar-offcanvas-touch" id="example-offcanvas-three">
+                <!-- <div class="collapse navbar-collapse" id="example-overlay-one"> -->
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <a href="index.html">Home</a>
@@ -274,39 +238,46 @@
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
-            <!-- /.container -->
         </nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>Space Exploration</h1>
-                        <hr class="small">
-                        <span class="subheading">Start writing your content today</span>
+        
+        <div class="background-cover" style="padding-top:200px;padding-bottom:200px; background-image: url('../../demo/images/openroad.jpg'); height: 550px;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <h1 style="text-align:center;color:#ffffff;">About Our Company</h1>
                     </div>
+                    <div class="col-sm-2"></div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
     <div class="delimiter"></div> <!-- spacer between each component block -->
 
-    <!-- Set your background image for this header on the line below. -->
-    <header class="header-01 hero-header overlay header-with-navbar" style="background-image: url('../../demo/images/openroad.jpg'); height: 550px;" data-stellar-background-ratio="0.5">
-        <!-- Navigation -->
-        <nav class="navbar navbar-clear">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header page-scroll">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-four-collapse">
+    <div class="site-container-04">
+        <nav class="navbar navbar-clear" role="navigation" data-content-field="header-content" data-navbar-type="offcanvas" role="header">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="{{ site_url }}" class="navbar-brand">
+                        <!--
+                            <img src="https://placehold.it/200x75" class="site-logo-image" alt="" />
+                        -->
+                        <span class="">Space</span>
+                    </a>
+                    <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-overlay-one" data-target-original="example-overlay-one"> -->
+                    <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#example-offcanvas-three" data-target-original="#example-offcanvas-three">
                         <span class="sr-only">Toggle navigation</span>
-                        <div class="navbar-toggle-burger"></div>
+                        <span>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                        </span>
                     </button>
-                    <a class="navbar-brand" href="index.html">Space</a>
                 </div>
-    
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="example-navbar-four-collapse">
+                <div class="navbar-offcanvas navbar-offcanvas-touch" id="example-offcanvas-three">
+                <!-- <div class="collapse navbar-collapse" id="example-overlay-one"> -->
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <a href="index.html">Home</a>
@@ -324,25 +295,34 @@
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
-            <!-- /.container -->
         </nav>
-
-        <div class="header-content text-center text-white">
-            <div class="header-content__heading">
-                <ul class="header-content__heading--category-list">
-                    <li class="first"><a>Content Strategy</a></li>
-                    <li><a>Responsive Design</a></li>
-                    <li class="last"><a>User Experience Design</a></li>
-                </ul>
-                <h1>Man must explore, and this is exploration at its greatest</h1>
-            </div>
-            <div class="header-content__author-content">
-                <img class="avatar" src="../../demo/images/person_1.jpg" alt="" />
-                <p>Posted by <span itemprop="author"><a href="#">Michelle Perelli, Author of Book</a></span></p>
-                <p>on <time datetime="2016-12-07T12:09:01+00:00" itemprop="dateCreated">December 7, 2019</time></p>
+        
+        <div class="hero-header overlay" style="padding-top:200px;padding-bottom:200px; background-image: url('../../demo/images/openroad.jpg'); height: 550px;" data-stellar-background-ratio="0.5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <div class="header-content text-center text-white">
+                            <div class="header-content__heading">
+                                <ul class="header-content__heading--category-list">
+                                    <li class="first"><a>Content Strategy</a></li>
+                                    <li><a>Responsive Design</a></li>
+                                    <li class="last"><a>User Experience Design</a></li>
+                                </ul>
+                                <h1>Man must explore, and this is exploration at its greatest</h1>
+                            </div>
+                            <div class="header-content__author-content">
+                                <img class="avatar" src="../../demo/images/person_1.jpg" alt="" />
+                                <p>Posted by <span itemprop="author"><a href="#">Michelle Perelli, Author of Book</a></span></p>
+                                <p>on <time datetime="2016-12-07T12:09:01+00:00" itemprop="dateCreated">December 7, 2019</time></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
             </div>
         </div>
-    </header>
+    </div>
 
     <div class="delimiter"></div> <!-- spacer between each component block -->
     

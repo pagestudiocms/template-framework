@@ -82,35 +82,25 @@
 	-moz-osx-font-smoothing: grayscale;
 } 
 
-.header-01 {
-	&.hero-header {
-    background-color: #777;  
-	  .site-heading, 
-	  .post-heading, 
-	  .page-heading {
-      padding: 100px 0 50px;
-      color: white;
-      text-align: center;
-    
-      h1 {
-        margin-top: 0;
-        font-size: 50px;
-      }
-      .subheading {
-        font-size: 24px;
-        line-height: 1.1;
-        display: block;
-        font-weight: 300;
-        margin: 10px 0 0;
-      }
-	  }
-  	  
-	  @media only screen and (min-width: $screen-sm) {
-      .site-heading, 
-      .post-heading, 
-      .page-heading {
-        padding: 150px 0;
-      }
-	  } // end media query
-	}
+//
+// Demo only styles 
+
+.site-container-02,
+.site-container-04 {
+  .navbar {
+    z-index: 2;
+  }
+  .demo-header {
+    z-index: 0;
+    transform: translateY(-100px);
+    @media screen and (max-width: $screen-sm - 1px){
+      transform: translateY(-60px);
+    }
+  }
+  .hero-header {
+    transform: translateY(-100px);
+    @media screen and (max-width: $screen-sm - 1px){
+      transform: translateY(-60px);
+    }
+  }
 }

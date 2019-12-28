@@ -68,71 +68,52 @@
 //
 // Navbar positioning and transparency 
 $bar-bg-color: #FFF;
-.hero-header {
-	&.header-with-navbar {
-    @media only screen and (min-width: $screen-xs){
-      .navbar {
-        &.navbar-clear {
-          .navbar-toggle {
-            .navbar-toggle-burger {
-              background: transparent;
-              background-color: transparent;
-              &:after, 
-              &:before {
-                background: $bar-bg-color;
-              }
-            }
-            &.collapsed .navbar-toggle-burger {
-              background: $bar-bg-color;
-              background-color: $bar-bg-color;
-            }
-          }
-        }
-      }
-    }
 
-	  @media only screen and (min-width: $screen-sm) {
-      padding-top: 0;
-      .navbar {
-        &.navbar-clear {
-          background: transparent;
-          background-color: transparent;
-          border-color: transparent;
-          border-bottom-color: rgba(255, 255, 255, 0.1); 
-          .navbar-brand {
-            color: #FFF;
-          }
-          .navbar-nav > li {
-            > a {
-              color: rgba(255, 255, 255, 0.85);
-              border-bottom: 1px solid transparent;
+.navbar {
+  @media only screen and (min-width: $screen-xs) {
+    &.navbar-clear {
+      background: transparent;
+      background-color: transparent;
+      border-color: transparent;
+      .navbar-brand {
+        color: #FFF;
+      }
+      .navbar-offcanvas {
+        background-color: $inverse-base-color;
+        .navbar-nav > li {
+          > a {
+            color: rgba(255, 255, 255, 0.85);
+            &:hover {
               background: none;
-              &:hover {
-                border-bottom-color: rgba(255, 255, 255, 0.9);
-              }
             }
           }
         }
       }
     }
-    
-    @media only screen and (max-width: ($screen-sm - 1px)) {
-      .navbar {
-        &.navbar-clear {
-          background: transparent;
-          background-color: transparent;
-          .navbar-brand {
-            color: #FFF;
+  }
+
+  @media only screen and (min-width: $screen-sm) {
+    &.navbar-clear {
+      border-bottom-color: rgba(255, 255, 255, 0.1); 
+      .navbar-nav > li {
+        > a {
+          color: rgba(255, 255, 255, 0.85);
+          border-bottom: 1px solid transparent;
+          background: none;
+          &:hover {
+            border-bottom-color: rgba(255, 255, 255, 0.9);
           }
         }
       }
     }
-	}
+  }
 }
 
 // 
 // Header hero image and text settings 
 .hero-header {
+  overflow: hidden;
+  background-color: #f7f7f7;
   background: no-repeat center center;
   background-attachment: scroll;
   -webkit-background-size: cover;
@@ -283,4 +264,35 @@ $bar-bg-color: #FFF;
   .header-content__author-content {
     z-index: 2;
   }
+}
+
+.hero-header {
+  background-color: #777;  
+  .site-heading, 
+  .post-heading, 
+  .page-heading {
+    padding: 100px 0 50px;
+    color: white;
+    text-align: center;
+  
+    h1 {
+      margin-top: 0;
+      font-size: 50px;
+    }
+    .subheading {
+      font-size: 24px;
+      line-height: 1.1;
+      display: block;
+      font-weight: 300;
+      margin: 10px 0 0;
+    }
+  }
+    
+  @media only screen and (min-width: $screen-sm) {
+    .site-heading, 
+    .post-heading, 
+    .page-heading {
+      padding: 150px 0;
+    }
+  } // end media query
 }
