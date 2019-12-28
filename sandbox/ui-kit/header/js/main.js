@@ -13,8 +13,11 @@
 	  return (w < 768) ? 'xs' : ((w < 992) ? 'sm' : ((w < 1200) ? 'md' : 'lg'));
 	}
   
-	function initMobileNavOverlay(){
-	  var $mobileNavToggler = $('#navbar-nav-toggle');
+	function initMobileNavOverlay($mobileNavToggler){
+    if(typeof $mobileNavToggler === 'undefined'){
+      console.log('Error: unable to initialize the overlay');
+      return;
+    }
 	  let breakpoint = getBootstrapBreakpoint();
 	  let targetOriginal = $mobileNavToggler[0].dataset.targetOriginal;
 	  switch(breakpoint){
@@ -61,6 +64,13 @@
 	});
   
   $(document).ready(function(){
-	  initMobileNavOverlay();
+    $('[data-navbar-type="overlay"]').each(function(key, nav){
+      var $el = $(nav).find('.navbar-toggle');
+      $(this).addClass('navbar-overlay');
+      initMobileNavOverlay($el);
+      $(window).resize(function(){
+        initMobileNavOverlay($el);
+      });
+    });
   });
 }());

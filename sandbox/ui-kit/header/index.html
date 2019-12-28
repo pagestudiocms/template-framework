@@ -83,6 +83,63 @@
 <div class="site-container" role="site-container">
 
     <div class="delimiter"></div> <!-- spacer between each component block -->
+    
+    <div class="site-container-01">
+        <nav class="navbar navbar-inverse" role="navigation" data-content-field="header-content" data-navbar-type="offcanvas" role="header">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="{{ site_url }}" class="navbar-brand">
+                        <!--
+                            <img src="https://placehold.it/200x75" class="site-logo-image" alt="" />
+                        -->
+                        <span class="text-muted">Space</span>
+                    </a>
+                    <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-overlay-one" data-target-original="example-overlay-one"> -->
+                    <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#example-offcanvas-one" data-target-original="#example-offcanvas-one">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                            <i class="icon-bar"></i>
+                        </span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="navbar-offcanvas navbar-offcanvas-touch" id="example-offcanvas-one">
+                <!-- <div class="collapse navbar-collapse" id="example-overlay-one"> -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="post.html">Sample Post</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+        
+        <div style="padding-top:200px;padding-bottom:200px; background-image: url('../../demo/images/openroad.jpg'); height: 550px;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <h1 style="text-align:center;color:#ffffff;">About Our Company</h1>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="delimiter"></div> <!-- spacer between each component block -->
 
     <!-- Set your background image for this header on the line below. -->
     <header class="header-01 hero-header" style="background-image: url('../../demo/images/openroad.jpg'); height: 550px;">
@@ -141,7 +198,7 @@
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header page-scroll">
-                    <button type="button" id="navbar-nav-toggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-two-collapse" data-target-original="example-navbar-two-collapse">
+                    <button type="button" id="navbar-nav-toggle-old" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-two-collapse" data-target-original="example-navbar-two-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <div class="navbar-toggle-burger"></div>
                     </button>
@@ -295,6 +352,23 @@
 
 <!-- Modal -->
 <div class="mobile-nav-overlay modal fade" id="example-navbar-two-collapse-overlay" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+            <div class="rl">
+            </div>
+        </div>
+    </div>
+    <div class="modal-dialog" role="document">
+        <div class="mobile-nav-content">
+            <div class="mobile-nav-body">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="mobile-nav-overlay modal fade" id="example-overlay-one-overlay" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="close-modal" data-dismiss="modal">
         <div class="lr">
             <div class="rl">

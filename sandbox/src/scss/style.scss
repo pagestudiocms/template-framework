@@ -55,6 +55,27 @@
 // Utility classes
 // ---------------------------------------------------------------
 
+.hidden-xs {
+  @media only screen and (max-width: $screen-xs - 1px) {
+    display: none !important;
+  }
+}
+.hidden-sm {
+  @media only screen and (max-width: $screen-sm - 1px) {
+    display: none !important;
+  }
+}
+.hidden-md {
+  @media only screen and (max-width: $screen-md - 1px) {
+    display: none !important;
+  }
+}
+.hidden-lg {
+  @media only screen and (max-width: $screen-lg - 1px) {
+    display: none !important;
+  }
+}
+
 // Rotate counter-clockwise 90 degrees
 .rotate {
   @include transform(rotate(-90deg));
