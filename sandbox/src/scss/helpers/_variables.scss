@@ -41,10 +41,6 @@ $brand-link-color: $brand-primary !default;
 
 $inverse-base-color:  #222 !default;
 
-// --------------------------------------------------------------
-// Bootstrap variables are found in bootstrap/_variables.scss
-// --------------------------------------------------------------
-
 // Breackpoints 
 
 $breakpoints: (
@@ -55,14 +51,13 @@ $breakpoints: (
   xsmall:   '(max-width: 480px)'
 );
 
-// Typography 
+// --------------------------------------------------------------
+// Bootstrap variables are found in bootstrap/_variables.scss
+// --------------------------------------------------------------
 
-// $font-family-sans-serif:    "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:         "Open Sans", Helvetica, Arial, sans-serif !default; // Georgia, "Times New Roman", Times, serif
-//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-// $font-family-monospace:     Menlo, Monaco, Consolas, "Courier New", monospace !default;
-// $font-family-base:          $font-family-sans-serif !default;
-$font-size-base:            14px !default;
+//== Typography 
+//
+//##
 
 // Bootstrap 4 vars 
 
@@ -70,8 +65,41 @@ $font-weight-light:        200 !default;
 $font-weight-normal:       300 !default;
 $font-weight-bold:         600 !default;
 
+
+//== Navbar
+//
+//##
+
+// Transparent navbar
+// Reset transparent navbar basics
+$navbar-clear-color:                      rgba(255, 255, 255, 0.85) !default;
+$navbar-clear-bg:                         transparent !default;
+$navbar-clear-border:                     darken($navbar-clear-bg, 10%) !default;
+
+// Inverted navbar links
+$navbar-clear-link-color:                 rgba(255, 255, 255, 0.85) !default;
+$navbar-clear-link-hover-color:           #fff !default;
+$navbar-clear-link-hover-bg:              transparent !default;
+$navbar-clear-link-active-color:          $navbar-clear-link-hover-color !default;
+$navbar-clear-link-active-bg:             transparent !default;
+$navbar-clear-link-disabled-color:        #444 !default;
+$navbar-clear-link-disabled-bg:           transparent !default;
+
+// Inverted navbar brand label
+$navbar-clear-brand-color:                $navbar-clear-link-color !default;
+$navbar-clear-brand-hover-color:          #fff !default;
+$navbar-clear-brand-hover-bg:             transparent !default;
+
+// Inverted navbar toggle
+$navbar-clear-toggle-hover-bg:            #333 !default;
+$navbar-clear-toggle-icon-bar-bg:         #fff !default;
+$navbar-clear-toggle-border-color:        #333 !default;
+
 // --------------------------------------------------------------
-// Custom module variables  
+// Non Bootstrap variables  
 // --------------------------------------------------------------
+
+$mobile-overlay-close-btn: rgba(255, 255, 255, 0.97);
+$mobile-overlay-close-btn-size: 25px;
 
 $table-hover-bg-color: #F2F7FA;

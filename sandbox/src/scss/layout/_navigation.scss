@@ -1,10 +1,3 @@
-$bar-width: 20px;
-$bar-height: 2px;
-$bar-spacing: 6px;
-$bar-bg-color: #000;
-$mobile-overlay-close-btn: rgba(255, 255, 255, 0.97);
-$mobile-overlay-close-btn-size: 25px;
-
 //
 // Mobile overlay 
 // 
@@ -93,6 +86,13 @@ $mobile-overlay-close-btn-size: 25px;
     }
   }
 }
+
+// 
+// Navbar  
+// 
+
+// All navbars 
+
 .navbar {
   margin-bottom: 0;
 }
@@ -123,9 +123,9 @@ $mobile-overlay-close-btn-size: 25px;
     .navbar-brand {
       padding: 40px;
       text-transform: uppercase;
-      > img {
-        // max-height: ;
-      }
+      // > img {
+        // max-height: 50px;
+      // }
     }
     
     .nav li {
@@ -136,15 +136,71 @@ $mobile-overlay-close-btn-size: 25px;
       }
       > a {
         padding: 40px 0 38px 0;
-        // &:hover,
-        // &:focus {
-        // 
-        // }
       }
     }
   }
 }
 
+//
+// Navbar inverse 
+
 .navbar-inverse .navbar-toggle:hover {
   background-color: $inverse-base-color;
+}
+
+//
+// Navbar clear (transparent)
+
+@media only screen and (min-width: $screen-xs) {
+  .navbar {
+    &.navbar-clear {
+      background: $navbar-clear-bg;
+      background-color: $navbar-clear-bg;
+      border-color: $navbar-clear-border;
+      
+      .navbar-header {
+        .navbar-brand {
+          color: $navbar-clear-brand-color;
+        }
+        .navbar-toggle {
+          .icon-bar {
+            background: $navbar-clear-brand-color;
+          }
+        }
+      }
+      .navbar-offcanvas {
+        background-color: $inverse-base-color;
+        .navbar-nav > li {
+          > a {
+            color: $navbar-clear-link-color;
+            &:hover {
+              color: $navbar-clear-link-hover-color;
+              background: $navbar-clear-link-hover-bg;
+            }
+          }
+          &.active a {
+            color: $navbar-clear-link-hover-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $screen-sm) {
+  .navbar {
+    &.navbar-clear {
+      border-bottom-color: rgba(255, 255, 255, 0.1); 
+      .navbar-nav > li {
+        > a {
+          color: $navbar-clear-link-color;
+          border-bottom: 1px solid $navbar-clear-border;
+          background: $navbar-clear-bg;
+          &:hover {
+            border-bottom-color: rgba(255, 255, 255, 0.9);
+          }
+        }
+      }
+    }
+  }
 }

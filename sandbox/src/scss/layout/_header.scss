@@ -65,50 +65,6 @@
 // Header section 
 //
 
-//
-// Navbar positioning and transparency 
-$bar-bg-color: #FFF;
-
-.navbar {
-  @media only screen and (min-width: $screen-xs) {
-    &.navbar-clear {
-      background: transparent;
-      background-color: transparent;
-      border-color: transparent;
-      .navbar-brand {
-        color: #FFF;
-      }
-      .navbar-offcanvas {
-        background-color: $inverse-base-color;
-        .navbar-nav > li {
-          > a {
-            color: rgba(255, 255, 255, 0.85);
-            &:hover {
-              background: none;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  @media only screen and (min-width: $screen-sm) {
-    &.navbar-clear {
-      border-bottom-color: rgba(255, 255, 255, 0.1); 
-      .navbar-nav > li {
-        > a {
-          color: rgba(255, 255, 255, 0.85);
-          border-bottom: 1px solid transparent;
-          background: none;
-          &:hover {
-            border-bottom-color: rgba(255, 255, 255, 0.9);
-          }
-        }
-      }
-    }
-  }
-}
-
 // 
 // Header hero image and text settings 
 .hero-header {

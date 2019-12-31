@@ -1,29 +1,30 @@
-/**
- * Main website styles
- *
- * This file contains all the elements needed to change the 
- * appearance of the default bootstrap theme. 
- *
- * @project   <http://pagestudiocms.com> 
- * @version   0.1.1
- * @package   xhtml-css
- * @author    Cosmo Mathieu <http://cosmointeractive.co> 
- * @copyright 2015 <http://cosmointeractive.co>
- * @file      style.css
- * @css-for   IE 9+, Safari 4+, Firefox 3+
- * 
- * --------------------------------------------------------------
- * Table of Contents
- * --------------------------------------------------------------
- * 1.0 - Reset
- * 
- * 
- * --------------------------------------------------------------
- * Color Glossary - needs updating
- * --------------------------------------------------------------
- * Dark gray (text):            #333333
- * transition: all 0.5s ease-in-out 0s;
- */ 
+// 
+// Main website styles
+//
+// This file contains all the elements needed to change the 
+// appearance of the default bootstrap theme.
+//
+// @project   <http://pagestudiocms.com> 
+// @version   0.1.1
+// @package   xhtml-css
+// @author    Cosmo Mathieu <http://cosmointeractive.co> 
+// @copyright 2015 <http://cosmointeractive.co>
+// @file      style.css
+// @css-for   IE 9+, Safari 4+, Firefox 3+
+//
+// 
+// --------------------------------------------------------------
+// Table of Contents
+// --------------------------------------------------------------
+// 1.0 - Define variables
+// 
+// 
+// --------------------------------------------------------------
+// Color Glossary - needs updating
+// --------------------------------------------------------------
+// Dark gray (text):            #333333
+// transition: all 0.5s ease-in-out 0s;
+//
 
 // --------------------------------------------------------------
 // Sass file Imports
@@ -31,7 +32,7 @@
 
 @import "helpers/variables";   // Theme specific variables 
 @import "helpers/bootstrap";   // Bootstrap variable overrides
-@import "helpers/helpers";      // Keyframes etc.
+@import "helpers/helpers";     // Keyframes etc.
 @import "helpers/mixins";      // Theme specific mixins 
 @import "vendors/bootstrap/_bootstrap";   // Bootstrap variables 
 @import "vendors/my-sass-mixins/mixins";  // Framework specific mixins 
