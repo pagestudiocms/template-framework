@@ -8002,9 +8002,7 @@ hr.small {
   font-weight: 300;
   margin: 10px 0 0;
 }
-.hero-header .site-heading.parallax-window,
-.hero-header .post-heading.parallax-window,
-.hero-header .page-heading.parallax-window {
+.hero-header.parallax-window {
   background-color: transparent;
 }
 @media only screen and (min-width: 768px) {
