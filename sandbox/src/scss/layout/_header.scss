@@ -242,6 +242,10 @@
       font-weight: 300;
       margin: 10px 0 0;
     }
+
+    &.parallax-window { // Bugfix for parallax effect.
+      background-color: transparent;
+    }
   }
     
   @media only screen and (min-width: $screen-sm) {
