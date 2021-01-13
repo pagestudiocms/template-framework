@@ -95,6 +95,34 @@
 
 .navbar {
   margin-bottom: 0;
+
+  // Menu dropdown styling 
+  .navbar-nav {
+    .open > .dropdown-menu {
+      background-color: #1a1a1a;
+  
+      li {
+        > a {
+          padding: 8px 15px;
+          &:hover {
+            background-color: inherit;
+          }
+        }
+
+        &:first-child {
+          margin-left: 15px;
+        }
+      }
+      
+      .active > a, 
+      .active > a:hover, 
+      .active > a:focus {
+        color: #6b3b6e;
+        text-decoration: none;
+        background-color: transparent;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: ($screen-sm - 1px)){
